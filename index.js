@@ -2,6 +2,9 @@ var express = require('express');
 var mysql = require('mysql');
 var app = express();
 
+process.env.KEY_NAME
+const port = process.env.PORT || 8080;
+
 var pool = mysql.createPool({
   connectionLimit: 100,
   host: '127.0.0.1',
@@ -67,4 +70,4 @@ getApiCall(get + "test", aktueller_Dienstgrad);
 getApiCall(get + "akt_dienstgrad_ermitteln", akt_dienstgrad_ermitteln);
 
 
-app.listen(8080);
+app.listen(port);
