@@ -1,0 +1,27 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js localhost 8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "canvasjs": "^1.8.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.2.1",
+    "helmet": "^3.14.0",
+    "mssql": "^4.2.2",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
